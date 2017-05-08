@@ -1,0 +1,69 @@
+<!DOCTYPE> <!--Aqui veremos imagens, videos, listas e tabelas-->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Imagens, videos, listas e tabelas</title>
+    </head>
+
+    <body>
+        <!-- IMAGENS -->
+
+        <h1>Imagens</h1>
+        <img width="320" height="180" src="img-conhecimento.jpg" alt="Livro e conhecimento" >
+
+        <figure> <!-- motores de busca usarao figcapiton para relacionar a imagem e seu titulo-->
+            <a href="https://www.google.com.br/maps">
+            <img width="320" height="180" src="img-paratodobrasil.jpg">
+            </a>
+            <figcaption>Entrega para todo o Brasil.</figcaption>
+        </figure>
+
+        <!-- VIDEOS -->
+
+        <h1>Vídeos</h1>
+
+        <video width="320" height="180" controls>
+            <!--Aqui fazemos 2 sources para caso o usuario nao tenho um formato mp4, o outro substitui e vice e versa -->
+            <!--Caso nao suporte nenhum dos dois ira aparecer a mensagem abaixo-->
+            <source src="seuVideo.mp4" type="video/mp4">
+            <source src="seuVideo.mpeg" type="video/mpeg">
+            Seu navegador não suporta esse vídeo.
+        </video>
+        <br>
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/3t3Fe8PDe3o" frameborder="0" allowfullscreen></iframe>
+
+        <!-- LISTAS -->
+
+        <h1>Listas</h1>
+        <!--UL listas desordenadas e OL lista ordenada-->
+        <ul>
+            <li>HTML</li>
+            <ul>
+                <li>Marcações</li>
+                <li>Links</li>
+            </ul>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Ajax</li>
+        </ul>
+        <h2>Qual aprender primeiro?</h2>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <!-- TABELA -->
+        
+        <!--caption é como se fosse uma legenda para a tabela-->
+        <table border="1">
+            <caption>Relatórios dos pilotos da Fórmula 1</caption>
+            <!-- Table row (tr) é a linha, e Th e Td são colunas-->
+            <tr>
+                <th>Nome do piloto</th>
+                <th>Pontuação</th>
+                <th>Ativo</th>
+            </tr>
+        </table>
+    </body>    
+</html>
